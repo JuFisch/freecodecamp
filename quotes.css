@@ -1,0 +1,55 @@
+#header {
+  color: gray;
+  font-family: Lobster;
+  font-size: 60px;
+  text-align: center;
+  padding: 10px;
+}
+
+.row {
+  margin: auto;
+}
+
+.title {
+  color: gray;
+  font-family: Serif;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sub-title {
+  color: black;
+  font-family: Amatic SC;
+  font-size: 40px;
+  text-align: center;
+}
+
+.well {
+  margin: auto;
+}
+
+#quote-well {
+  background: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+#getQuote {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+img {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 25%;
+}

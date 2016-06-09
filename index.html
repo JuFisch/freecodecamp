@@ -1,0 +1,61 @@
+<DOCTYPE HTML>
+<html>
+<head>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="quotes.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+  $("#getQuote").on("click", function() {
+    $.getJSON("http://api.icndb.com/jokes/random", function(json) {
+      var funnyjoke = json.value.joke;
+
+      $("#quote-well").html(funnyjoke);
+    });
+  });
+});
+
+</script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row" id="header">
+    <p>Chuck Norris Joke Machine</p>
+    <img src="http://charlottemagazine-images.dashdigital.com/chuck-norris%20america.gif?ver=1374772193">
+    <p>Due to reasons</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6" style="text-align: center">
+      <div class="well">
+        <div class="col-xs-12">
+          <button id = "getQuote" class = "btn btn-primary">
+       Get Chuck Norris Joke
+        </div>
+        <div class="well" id="quote-well">
+          Hold on to your hats.
+        </div>
+      </div>
+      </div>
+     <div class="col-sm-3"></div>
+   </div>
+    <div class="row">
+      <div class="row">
+      
+    <hr>
+    <p align="middle">Coded by <a href="https://github.com/JuFisch">Julie Fischer</a></p>
+    <p align="middle">Generated with quotes from <a href="http://www.icndb.com/">The Internet Chuck Norris Database</a></p>
+      </div>
+</div>
+    </div>
+
+</body>
+</html>
